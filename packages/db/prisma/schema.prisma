@@ -13,6 +13,7 @@ model Nft {
 
 model Sale {
   id       String    @id @default(auto()) @map("_id") @db.ObjectId 
+  transactionHash String @unique
   to       String
   from     String
   price    BigInt

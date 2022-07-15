@@ -19,12 +19,22 @@ async function main(): Promise<any> {
     const events = await nft.queryFilter(transfer, fromBlockOrBlockhash);
 
     for (const event of events) {
-      const to = event.args[0];
-      const from = event.args[1];
-      const amount = event.args[2];
-      await dbClient.sale.create({
-        data: { from, to, price: amount.toBigInt() },
-      });
+      try {
+        const to = event.args[0];
+        const from = event.args[1];
+        const amount = event.args[2];
+        await dbClient.sale.create({
+          data: {
+            tokenId: event.address,
+            from,
+            to,
+            price: amount.toBigInt(),
+            transactionHash: event.transactionHash,
+          },
+        });
+      } catch (E) {
+        console.error(E);
+      }
     }
   };
 }
