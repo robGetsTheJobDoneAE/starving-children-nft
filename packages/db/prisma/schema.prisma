@@ -1,0 +1,20 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+model Nft {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId 
+  tokenId  String
+}
+
+model Sale {
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId 
+  to       String
+  from     String
+  price    String
+  tokenId  String
+}

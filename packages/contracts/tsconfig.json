@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {}
+  },
+
+  "include": [
+    "hardhat.config.ts",
+    "./typechain-types/**/*.ts",
+    "./typechain-types/**/*.d.ts",
+    "./artifacts/**/*.json"
+  ]
+}

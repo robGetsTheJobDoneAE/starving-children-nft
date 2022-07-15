@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "name": "ROOT",
+      "path": ".."
+    },
+    {
+      "name": "app",
+      "path": "../packages/app"
+    },
+    {
+      "name": "db",
+      "path": "../packages/db"
+    },
+    {
+      "name": "contracts",
+      "path": "../packages/contracts"
+    }
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "[solidity]": {
+      "editor.defaultFormatter": "JuanBlanco.solidity"
+    }
+  }
+}
