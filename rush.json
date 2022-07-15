@@ -456,6 +456,10 @@
     // },
     //
     {
+      "packageName": "@starving/chain-listener",
+      "projectFolder": "packages/chain-listener"
+    },
+    {
       "packageName": "@starving/db",
       "projectFolder": "packages/db"
     },

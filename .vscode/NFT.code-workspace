@@ -5,16 +5,20 @@
       "path": ".."
     },
     {
-      "name": "app",
+      "name": "@starving/app",
       "path": "../packages/app"
     },
     {
-      "name": "db",
+      "name": "@starving/db",
       "path": "../packages/db"
     },
     {
-      "name": "contracts",
+      "name": "@starving/contracts",
       "path": "../packages/contracts"
+    },
+    {
+      "name": "@starving/chain-listener",
+      "path": "../packages/chain-listener"
     }
   ],
   "settings": {
