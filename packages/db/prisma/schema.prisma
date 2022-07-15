@@ -15,6 +15,6 @@ model Sale {
   id       String    @id @default(auto()) @map("_id") @db.ObjectId 
   to       String
   from     String
-  price    String
+  price    BigInt
   tokenId  String
 }
