@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 
 import Footer from "./common/footer/Footer";
 import Header from "./common/header/Header";
@@ -12,6 +12,7 @@ import Profile from "./pages/profile/Profile";
 import Nft from "./pages/nft/Nft";
 import Admin from "./pages/admin/Admin";
 import Wtf from "./pages/wtf/Wtf";
+import Explore from "./pages/explore/Explore";
 class Application extends Nullstack {
   prepare(context) {
     context.mode = "dark";
@@ -28,6 +29,7 @@ class Application extends Nullstack {
         <Nft route="/nft"></Nft>
         <Wtf route="/wtf"></Wtf>
         <Admin route="/admin"></Admin>
+        <Explore route="/explore"></Explore>
       </main>
     );
   }

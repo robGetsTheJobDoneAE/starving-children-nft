@@ -1,6 +1,6 @@
 import Button from "../../common/button/Button";
 import CubeMedium from "../../common/cube/CubeMedian";
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 class HomeSplash extends Nullstack {
   renderCTALeft() {
     return (

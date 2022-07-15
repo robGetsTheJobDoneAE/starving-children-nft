@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 import Header from "../../common/header/Header";
 
 class Admin extends Nullstack {

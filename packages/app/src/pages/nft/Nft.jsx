@@ -1,11 +1,12 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
+import Account from "../../common/account/Account";
 import Header from "../../common/header/Header";
 class Nft extends Nullstack {
   render() {
     return (
-      <div>
+      <div class="p-8">
         <Account />
-        <div class="container mx-auto">
+        <div class="container mx-auto px-14">
           <Header></Header>
         </div>
       </div>

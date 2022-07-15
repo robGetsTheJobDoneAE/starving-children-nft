@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 import NftCard from "../nft/NftCard";
 
 class Carousel extends Nullstack {

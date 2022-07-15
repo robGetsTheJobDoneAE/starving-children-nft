@@ -1,6 +1,6 @@
 import Button from "../../common/button/Button";
 import CubeMedium from "../../common/cube/CubeMedian";
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 import Carousel from "../../common/carousel/Carousel";
 class MostSold extends Nullstack {
   render() {

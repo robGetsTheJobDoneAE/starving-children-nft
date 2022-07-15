@@ -1,6 +1,6 @@
 import Button from "../button/Button";
 import CubeMedium from "../cube/CubeMedian";
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 class NftCard extends Nullstack {
   render({ nft }) {
     return (

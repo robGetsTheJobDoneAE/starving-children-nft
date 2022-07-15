@@ -11,6 +11,7 @@ importers:
       '@tailwindcss/forms': ~0.5.2
       '@tailwindcss/typography': ~0.5.3
       autoprefixer: ~10.4.7
+      esbuild-loader: ~2.19.0
       eslint: ^8.19.0
       eslint-plugin-react: ^7.30.1
       ethers: ~5.6.9
@@ -27,6 +28,7 @@ importers:
       '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.6
       '@tailwindcss/typography': 0.5.3_tailwindcss@3.1.6
       autoprefixer: 10.4.7_postcss@8.4.14
+      esbuild-loader: 2.19.0
       eslint: 8.19.0
       eslint-plugin-react: 7.30.1_eslint@8.19.0
       nullstack: 0.15.10
@@ -3097,6 +3099,19 @@ packages:
     dev: true
     optional: true
 
+  /esbuild-loader/2.19.0:
+    resolution: {integrity: sha512-urGNVE6Tl2rqx92ElKi/LiExXjGvcH6HfDBFzJ9Ppwqh4n6Jmx8x7RKAyMzSM78b6CAaJLhDncG5sPrL0ROh5Q==}
+    peerDependencies:
+      webpack: ^4.40.0 || ^5.0.0
+    dependencies:
+      esbuild: 0.14.49
+      joycon: 3.1.1
+      json5: 2.2.1
+      loader-utils: 2.0.2
+      tapable: 2.2.1
+      webpack-sources: 2.3.1
+    dev: true
+
   /esbuild-netbsd-64/0.14.49:
     resolution: {integrity: sha512-BXaUwFOfCy2T+hABtiPUIpWjAeWK9P8O41gR4Pg73hpzoygVGnj0nI3YK4SJhe52ELgtdgWP/ckIkbn2XaTxjQ==}
     engines: {node: '>=12'}
@@ -4792,6 +4807,11 @@ packages:
       supports-color: 8.1.1
     dev: true
 
+  /joycon/3.1.1:
+    resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
+    engines: {node: '>=10'}
+    dev: true
+
   /js-sha3/0.5.7:
     resolution: {integrity: sha512-GII20kjaPX0zJ8wzkTbNDYMY7msuZcTWk8S5UOh6806Jq/wz1J8/bnr8uGU0DAUmYDjj2Mr4X1cW8v/GLYnR+g==}
     dev: true
@@ -4861,6 +4881,12 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.6
+    dev: true
+
+  /json5/2.2.1:
+    resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
+    engines: {node: '>=6'}
+    hasBin: true
     dev: true
 
   /jsonfile/2.4.0:
@@ -5043,6 +5069,15 @@ packages:
       big.js: 5.2.2
       emojis-list: 3.0.0
       json5: 1.0.1
+    dev: true
+
+  /loader-utils/2.0.2:
+    resolution: {integrity: sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==}
+    engines: {node: '>=8.9.0'}
+    dependencies:
+      big.js: 5.2.2
+      emojis-list: 3.0.0
+      json5: 2.2.1
     dev: true
 
   /locate-path/2.0.0:
@@ -6920,6 +6955,10 @@ packages:
       - supports-color
     dev: true
 
+  /source-list-map/2.0.1:
+    resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
+    dev: true
+
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -8002,6 +8041,14 @@ packages:
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: true
+
+  /webpack-sources/2.3.1:
+    resolution: {integrity: sha512-y9EI9AO42JjEcrTJFOYmVywVZdKVUfOvDUPsJea5GIr1JOEGFVqwlY2K098fFoIjOkDzHn2AjRvM8dsBZu+gCA==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      source-list-map: 2.0.1
+      source-map: 0.6.1
     dev: true
 
   /webpack-sources/3.2.3:

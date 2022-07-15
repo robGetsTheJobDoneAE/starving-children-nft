@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 import base from "@starving/contracts/dist/typechain-types";
 import ethers from "ethers";
 class Account extends Nullstack {
@@ -6,7 +6,8 @@ class Account extends Nullstack {
     this.connectWallet();
   }
   async connectWallet() {
-    const factory = await new base.Tap__factory({});
+    console.log(base.ERC165__factory);
+    // const factory = await new base.Tap__factory();
     const fact = await factory.deploy();
     fact.requestTokens();
     const provider = new ethers.providers.JsonRpcProvider();

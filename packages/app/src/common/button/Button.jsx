@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 
 class Button extends Nullstack {
   renderLink({ title, href, target, mobile, onclick, textColor }) {

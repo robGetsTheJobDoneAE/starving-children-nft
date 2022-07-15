@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 import Account from "../account/Account";
 
 class Nav extends Nullstack {

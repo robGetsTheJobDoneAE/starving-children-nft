@@ -1,4 +1,4 @@
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 
 class Logo extends Nullstack {
   //   prepare({ page }: NullstackClientContext) {
@@ -8,7 +8,7 @@ class Logo extends Nullstack {
   render() {
     return (
       <>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center w-fit">
           <div>
             <span class="font-bold leading-[13px] text-[12px]">NFTS FOR</span>
           </div>

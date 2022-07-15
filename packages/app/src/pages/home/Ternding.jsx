@@ -2,7 +2,7 @@ import Button from "../../common/button/Button";
 import CubeMedium from "../../common/cube/CubeMedian";
 import CubeSmall from "../../common/cube/CubeSmall";
 import CubeWrapperNftCardSmall from "../../common/cube/CubeWrapper";
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 
 import NftCard from "../../common/nft/NftCard";
 class Trending extends Nullstack {

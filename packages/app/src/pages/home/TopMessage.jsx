@@ -1,7 +1,7 @@
 import Button from "../../common/button/Button";
 import CubeMedium from "../../common/cube/CubeMedian";
 import CubeSmall from "../../common/cube/CubeSmall";
-import Nullstack, { NullstackClientContext } from "nullstack";
+import Nullstack from "nullstack";
 class TopMessage extends Nullstack {
   renderChildImg({ img, body, header }) {
     return (
