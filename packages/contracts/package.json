@@ -2,8 +2,6 @@
   "name": "@starving/contracts",
   "version": "0.0.0",
   "main": "./dist/index.js",
-
-
   "scripts": {
     "build": "npx hardhat compile && tsc"
   },
@@ -15,7 +13,13 @@
     "chai": "~4.3.6",
     "@nomicfoundation/hardhat-network-helpers": "~1.0.3",
     "@nomiclabs/hardhat-etherscan": "~3.1.0",
-    "@typechain/hardhat": "~6.1.2"
+    "@typechain/hardhat": "~6.1.2",
+    "typechain": "~8.1.0",
+    "hardhat-gas-reporter": "~1.0.8",
+    "solidity-coverage": "~0.7.21",
+    "@ethersproject/providers": "~5.6.8",
+    "@ethersproject/abi": "~5.6.4",
+    "@types/mocha": "~9.1.1"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.0",
