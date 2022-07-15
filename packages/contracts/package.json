@@ -13,11 +13,13 @@
     "@nomiclabs/hardhat-ethers": "~2.1.0",
     "@nomicfoundation/hardhat-chai-matchers": "~1.0.2",
     "chai": "~4.3.6",
-    "@nomicfoundation/hardhat-network-helpers": "~1.0.3"
+    "@nomicfoundation/hardhat-network-helpers": "~1.0.3",
+    "@nomiclabs/hardhat-etherscan": "~3.1.0"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.0",
     "ethers": "~5.6.9",
-    "esbuild": "~0.14.49"
+    "esbuild": "~0.14.49",
+    "@nomiclabs/hardhat-etherscan": "~3.1.0"
   }
 }
