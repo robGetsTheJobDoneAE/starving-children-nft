@@ -22,7 +22,9 @@ async function main(): Promise<any> {
       const to = event.args[0];
       const from = event.args[1];
       const amount = event.args[2];
-      dbClient.sale.create({ data: { from, to, price: amount.toBigInt() } });
+      await dbClient.sale.create({
+        data: { from, to, price: amount.toBigInt() },
+      });
     }
   };
 }
