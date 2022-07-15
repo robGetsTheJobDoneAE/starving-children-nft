@@ -1,6 +1,6 @@
 import { ethers, utils } from "ethers";
 import { dbclient } from "@starving/db";
-import { MyToken__factory } from "@starving/contracts/dist/typechain-types/factories/contracts/Nft.sol/MyToken__factory";
+import { StavingChildrenNft__factory } from "@starving/contracts/dist/typechain-types/factories/contracts/Nft.sol/StavingChildrenNft__factory";
 
 const RPC_HOST_FALL_BACK =
   "https://mainnet.infura.io/v3/6d6c70e65c77429482df5b64a4d0c943";
@@ -13,7 +13,7 @@ async function main(): Promise<any> {
     fromBlockOrBlockhash: string | number
   ) => {
     const provider = new ethers.providers.JsonRpcProvider(RPC_HOST);
-    const nft = MyToken__factory.connect(STARVING_ADDRESS, provider);
+    const nft = StavingChildrenNft__factory.connect(STARVING_ADDRESS, provider);
     const transfer = await nft.filters["Transfer(address,address,uint256)"]();
 
     const events = await nft.queryFilter(transfer, fromBlockOrBlockhash);
