@@ -5,6 +5,18 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+// Inspired from chase
+library InfoForURI {
+    struct data {
+        string name;
+        uint256 price; // Can be 0 if donatable
+        uint8 editions;
+        uint8 editionsMinted;
+        bool initialized;
+        mapping(string => bool) trait;
+    }
+}
+
 contract StavingChildrenNft is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;

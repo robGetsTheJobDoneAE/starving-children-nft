@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "npx hardhat compile && npx hardhat typechain && tsc"
+    "build": "npx hardhat compile && npx hardhat typechain && tsc",
+    "hardhat-deploy": "npx hardhat run scripts/deploy.ts --network localhost"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",

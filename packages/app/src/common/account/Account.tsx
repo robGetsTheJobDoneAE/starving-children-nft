@@ -1,26 +1,25 @@
 import Nullstack from "nullstack";
+import { ethers } from "ethers";
 import { Tap__factory } from "@starving/contracts/dist/typechain-types/factories/contracts/Tap__factory";
+import { Tap } from "@starving/contracts/dist/typechain-types/contracts/Tap";
 // import { StavingChildrenNft__factory } from "@starving/contracts/dist/typechain-types/factories/contracts/Nft.sol/StavingChildrenNft__factory";
 
-import { ethers } from "ethers";
 class Account extends Nullstack {
+  balance = 0;
   // eth = undefined;
 
-  async hydrate({ settings }) {
-    const eth1 = await window.ethereum.enable();
-    const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
-    const res = await provider.send("eth_requestAccounts", []);
-    console.log(res);
-    const signer = provider.getSigner();
-    console.log("Account:", await signer.getAddress());
-    // console.log(settings);
-    // const eth = eth1[0];
-    // 0xbc64892631331ab1b0e96541f3454c61cbbdfc55;
-    const factory = await Tap__factory.connect(settings.tap, provider);
-    const fac = await factory.connect(signer);
-    // console.log(await fac.requestTokens({}));
-    console.log(await fac.balanceOf((await signer.getAddress()).toString()));
-    // console.log(await factory._deployed());
+  async hydrate({ wallet }) {
+    //@ts-ignore
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    console.log(provider.getSigner());
+    const signer = provider.getSigner(0);
+    const tap = Tap__factory.connect(
+      "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      signer
+    );
+    const balenc = await tap.balanceOf(wallet);
+    this.balance = ethers.utils.formatEther(balenc);
+    // await tap.requestTokens();
   }
   async connectWallet() {
     // console.log(StavingChildrenNft__factory);
@@ -36,12 +35,12 @@ class Account extends Nullstack {
     // );
     // const data = await marketContract.fetchMarketItems();
   }
-  getTap() {
-    return 1.354;
+  getTap(tap) {
+    return this.balance;
   }
 
-  getAddress() {
-    return "0x5a773...6f57c0";
+  getAddress({ tap, wallet }) {
+    return wallet;
   }
 
   render() {
