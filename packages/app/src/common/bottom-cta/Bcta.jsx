@@ -1,5 +1,5 @@
 import Nullstack from "nullstack";
-import CubeWrapperNftCardSmall from "../../common/cube/CubeWrapper";
+import CubeWrapperNftCardSmall from "../cube/CubeWrapper";
 
 class Bcta extends Nullstack {
   render() {

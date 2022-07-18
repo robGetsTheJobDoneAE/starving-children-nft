@@ -12,8 +12,10 @@
     "baseUrl": ".",
     "paths": {}
   },
+  "files": ["./hardhat.config.ts"],
 
   "include": [
+    "./scripts",
     "hardhat.config.ts",
     "./typechain-types/**/*.ts",
     "./typechain-types/**/*.d.ts",

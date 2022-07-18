@@ -25,6 +25,12 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
+
+  .wtfbackground {
+    background-image: url("wtf-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
   .childcyrptowallet {
     background-color: #c0c0c0;
     display: block;

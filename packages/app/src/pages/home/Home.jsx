@@ -6,7 +6,7 @@ import MostSold from "./MostSold";
 import Trending from "./Ternding";
 import TopMessage from "./TopMessage";
 import BuyNft from "./BuyNft";
-import Bcta from "./Bcta.jsx";
+import Bcta from "../../common/bottom-cta/Bcta.jsx";
 import Footer from "../../common/footer/Footer";
 class Home extends Nullstack {
   render() {

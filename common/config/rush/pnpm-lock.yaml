@@ -68,7 +68,9 @@ importers:
       hardhat: ^2.10.1
       hardhat-gas-reporter: ~1.0.8
       solidity-coverage: ~0.7.21
+      ts-node: ~10.9.1
       typechain: ~8.1.0
+      typescript: ^4.7.4
     dependencies:
       ethers: 5.6.9
     devDependencies:
@@ -76,19 +78,21 @@ importers:
       '@ethersproject/providers': 5.6.8
       '@nomicfoundation/hardhat-chai-matchers': 1.0.2_721bbef99d27bd251b47c855e8094ff8
       '@nomicfoundation/hardhat-network-helpers': 1.0.3_hardhat@2.10.1
-      '@nomicfoundation/hardhat-toolbox': 1.0.2_e4583bae85508e7a40ffc82e9574f962
+      '@nomicfoundation/hardhat-toolbox': 1.0.2_07ad1fb29b24eda401ef0c4ac93b1c2f
       '@nomiclabs/hardhat-ethers': 2.1.0_ethers@5.6.9+hardhat@2.10.1
       '@nomiclabs/hardhat-etherscan': 3.1.0_hardhat@2.10.1
       '@openzeppelin/contracts': 4.7.0
-      '@typechain/ethers-v5': 10.1.0_c138b0ca0e7d377cf9889fb1f19f27d1
+      '@typechain/ethers-v5': 10.1.0_285fd984434a61c481bfb648e6f1fb84
       '@typechain/hardhat': 6.1.2_3a29917e25d1dad4ce0f26557c6e040f
       '@types/mocha': 9.1.1
       chai: 4.3.6
       esbuild: 0.14.49
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
       hardhat-gas-reporter: 1.0.8_hardhat@2.10.1
       solidity-coverage: 0.7.21
-      typechain: 8.1.0
+      ts-node: 10.9.1_typescript@4.7.4
+      typechain: 8.1.0_typescript@4.7.4
+      typescript: 4.7.4
 
   ../../packages/db:
     specifiers:
@@ -702,7 +706,7 @@ packages:
       chalk: 2.4.2
       deep-eql: 4.1.0
       ethers: 5.6.9
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
       ordinal: 1.0.3
     dev: true
 
@@ -712,10 +716,10 @@ packages:
       hardhat: ^2.0.0
     dependencies:
       ethereumjs-util: 7.1.5
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
     dev: true
 
-  /@nomicfoundation/hardhat-toolbox/1.0.2_e4583bae85508e7a40ffc82e9574f962:
+  /@nomicfoundation/hardhat-toolbox/1.0.2_07ad1fb29b24eda401ef0c4ac93b1c2f:
     resolution: {integrity: sha512-8CEgWSKUK2aMit+76Sez8n7UB0Ze1lwT+LcWxj4EFP30lQWOwOws048t6MTPfThH0BlSWjC6hJRr0LncIkc1Sw==}
     peerDependencies:
       '@ethersproject/abi': ^5.4.7
@@ -744,15 +748,17 @@ packages:
       '@nomicfoundation/hardhat-network-helpers': 1.0.3_hardhat@2.10.1
       '@nomiclabs/hardhat-ethers': 2.1.0_ethers@5.6.9+hardhat@2.10.1
       '@nomiclabs/hardhat-etherscan': 3.1.0_hardhat@2.10.1
-      '@typechain/ethers-v5': 10.1.0_c138b0ca0e7d377cf9889fb1f19f27d1
+      '@typechain/ethers-v5': 10.1.0_285fd984434a61c481bfb648e6f1fb84
       '@typechain/hardhat': 6.1.2_3a29917e25d1dad4ce0f26557c6e040f
       '@types/mocha': 9.1.1
       chai: 4.3.6
       ethers: 5.6.9
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
       hardhat-gas-reporter: 1.0.8_hardhat@2.10.1
       solidity-coverage: 0.7.21
-      typechain: 8.1.0
+      ts-node: 10.9.1_typescript@4.7.4
+      typechain: 8.1.0_typescript@4.7.4
+      typescript: 4.7.4
     dev: true
 
   /@nomiclabs/hardhat-ethers/2.1.0_ethers@5.6.9+hardhat@2.10.1:
@@ -762,7 +768,7 @@ packages:
       hardhat: ^2.0.0
     dependencies:
       ethers: 5.6.9
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
     dev: true
 
   /@nomiclabs/hardhat-etherscan/3.1.0_hardhat@2.10.1:
@@ -776,7 +782,7 @@ packages:
       chalk: 2.4.2
       debug: 4.3.4
       fs-extra: 7.0.1
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
       lodash: 4.17.21
       semver: 6.3.0
       table: 6.8.0
@@ -1102,7 +1108,7 @@ packages:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
     dev: true
 
-  /@typechain/ethers-v5/10.1.0_c138b0ca0e7d377cf9889fb1f19f27d1:
+  /@typechain/ethers-v5/10.1.0_285fd984434a61c481bfb648e6f1fb84:
     resolution: {integrity: sha512-3LIb+eUpV3mNCrjUKT5oqp8PBsZYSnVrkfk6pY/ZM0boRs2mKxjFZ7bktx42vfDye8PPz3NxtW4DL5NsNsFqlg==}
     peerDependencies:
       '@ethersproject/abi': ^5.0.0
@@ -1116,8 +1122,9 @@ packages:
       '@ethersproject/providers': 5.6.8
       ethers: 5.6.9
       lodash: 4.17.21
-      ts-essentials: 7.0.3
-      typechain: 8.1.0
+      ts-essentials: 7.0.3_typescript@4.7.4
+      typechain: 8.1.0_typescript@4.7.4
+      typescript: 4.7.4
     dev: true
 
   /@typechain/hardhat/6.1.2_3a29917e25d1dad4ce0f26557c6e040f:
@@ -1132,12 +1139,12 @@ packages:
     dependencies:
       '@ethersproject/abi': 5.6.4
       '@ethersproject/providers': 5.6.8
-      '@typechain/ethers-v5': 10.1.0_c138b0ca0e7d377cf9889fb1f19f27d1
+      '@typechain/ethers-v5': 10.1.0_285fd984434a61c481bfb648e6f1fb84
       ethers: 5.6.9
       fs-extra: 9.1.0
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
       lodash: 4.17.21
-      typechain: 8.1.0
+      typechain: 8.1.0_typescript@4.7.4
     dev: true
 
   /@types/abstract-leveldown/7.2.0:
@@ -4205,13 +4212,13 @@ packages:
     dependencies:
       array-uniq: 1.0.3
       eth-gas-reporter: 0.2.25
-      hardhat: 2.10.1
+      hardhat: 2.10.1_ts-node@10.9.1+typescript@4.7.4
       sha1: 1.1.1
     transitivePeerDependencies:
       - '@codechecks/client'
     dev: true
 
-  /hardhat/2.10.1:
+  /hardhat/2.10.1_ts-node@10.9.1+typescript@4.7.4:
     resolution: {integrity: sha512-0FN9TyCtn7Lt25SB2ei2G7nA2rZjP+RN6MvFOm+zYwherxLZNo6RbD8nDz88eCbhRapevmXqOiL2nM8INKsjmA==}
     engines: {node: ^14.0.0 || ^16.0.0 || ^18.0.0}
     hasBin: true
@@ -4268,7 +4275,9 @@ packages:
       source-map-support: 0.5.21
       stacktrace-parser: 0.1.10
       true-case-path: 2.2.1
+      ts-node: 10.9.1_typescript@4.7.4
       tsort: 0.0.1
+      typescript: 4.7.4
       undici: 5.7.0
       uuid: 8.3.2
       ws: 7.5.7
@@ -7422,10 +7431,12 @@ packages:
       string-format: 2.0.0
     dev: true
 
-  /ts-essentials/7.0.3:
+  /ts-essentials/7.0.3_typescript@4.7.4:
     resolution: {integrity: sha512-8+gr5+lqO3G84KdiTSMRLtuyJ+nTBVRKuCrK4lidMPdVeEp0uqC875uE5NMcaA7YYMN7XsNiFQuMvasF8HT/xQ==}
     peerDependencies:
       typescript: '>=3.7.0'
+    dependencies:
+      typescript: 4.7.4
     dev: true
 
   /ts-node/10.8.2_2dd5d46eecda2aef953638919121af58:
@@ -7448,6 +7459,36 @@ packages:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
       '@types/node': 18.0.3
+      acorn: 8.7.1
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 4.7.4
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    dev: true
+
+  /ts-node/10.9.1_typescript@4.7.4:
+    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.3
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -7545,7 +7586,7 @@ packages:
     resolution: {integrity: sha512-eiDBDOmkih5pMbo9OqsqPRGMljLodLcwd5XD5JbtNB0o89xZAwynY9EdCDsJU7LtcVCClu9DvM7/0Ep1hYX3EQ==}
     dev: true
 
-  /typechain/8.1.0:
+  /typechain/8.1.0_typescript@4.7.4:
     resolution: {integrity: sha512-5jToLgKTjHdI1VKqs/K8BLYy42Sr3o8bV5ojh4MnR9ExHO83cyyUdw+7+vMJCpKXUiVUvARM4qmHTFuyaCMAZQ==}
     hasBin: true
     peerDependencies:
@@ -7560,7 +7601,8 @@ packages:
       mkdirp: 1.0.4
       prettier: 2.7.1
       ts-command-line-args: 2.3.1
-      ts-essentials: 7.0.3
+      ts-essentials: 7.0.3_typescript@4.7.4
+      typescript: 4.7.4
     transitivePeerDependencies:
       - supports-color
     dev: true
