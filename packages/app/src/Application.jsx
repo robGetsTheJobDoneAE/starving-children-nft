@@ -14,6 +14,7 @@ import Admin from "./pages/admin/Admin";
 import Wtf from "./pages/wtf/Wtf";
 import Explore from "./pages/explore/Explore";
 import Connect from "./common/connect/Connext";
+
 class Application extends Nullstack {
   prepare(context) {
     context.mode = "dark";
@@ -21,9 +22,10 @@ class Application extends Nullstack {
   }
 
   render({ wallet, tap }) {
-    if (!wallet) {
-      return <Connect />;
-    }
+    // if (!wallet) {
+    //   return <Connect />;
+    // }
+    return <Admin></Admin>;
     return (
       <main class="w-full bg-black text-white ">
         <Home route="/"></Home>

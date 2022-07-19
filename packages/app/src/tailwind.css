@@ -670,12 +670,12 @@ video {
   max-height: 17px;
 }
 
-.min-h-\[80vh\] {
-  min-height: 80vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
 }
 
 .w-full {
@@ -700,8 +700,16 @@ video {
   width: fit-content;
 }
 
+.w-4\/12 {
+  width: 33.333333%;
+}
+
 .w-\[100\%\] {
   width: 100%;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-\[14px\] {
@@ -807,6 +815,11 @@ video {
   background-color: rgb(253 197 0 / var(--tw-bg-opacity));
 }
 
+.bg-stone-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -841,18 +854,6 @@ video {
   padding-left: 2.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-\[21px\] {
-  padding-top: 21px;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -861,12 +862,32 @@ video {
   padding-right: 1rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pt-\[21px\] {
+  padding-top: 21px;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-center {
@@ -878,12 +899,12 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[35px\] {
-  font-size: 35px;
-}
-
 .text-\[20px\] {
   font-size: 20px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
 }
 
 .text-\[26px\] {
@@ -901,6 +922,14 @@ video {
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
 }
 
 .text-\[30px\] {
@@ -931,12 +960,12 @@ video {
   font-weight: 400;
 }
 
-.leading-\[49px\] {
-  line-height: 49px;
-}
-
 .leading-\[28px\] {
   line-height: 28px;
+}
+
+.leading-\[49px\] {
+  line-height: 49px;
 }
 
 .leading-\[36px\] {
@@ -955,12 +984,20 @@ video {
   line-height: 21px;
 }
 
-.leading-\[42px\] {
-  line-height: 42px;
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .leading-\[31px\] {
   line-height: 31px;
+}
+
+.leading-\[42px\] {
+  line-height: 42px;
+}
+
+.leading-\[63px\] {
+  line-height: 63px;
 }
 
 .tracking-\[0\.15em\] {

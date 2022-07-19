@@ -40,7 +40,10 @@ class Account extends Nullstack {
   }
 
   getAddress({ tap, wallet }) {
-    return wallet;
+    const add = wallet as string;
+    const pre = add.substring(0, 7);
+    const post = add.substring(add.length - 6, add.length);
+    return pre + "..." + post;
   }
 
   render() {

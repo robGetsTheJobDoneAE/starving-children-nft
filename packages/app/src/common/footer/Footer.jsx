@@ -6,8 +6,15 @@ class Footer extends Nullstack {
   //     page.locale = 'en-US';
   //   }
 
+  gotToWtf() {
+    window.location.assign("/wtf");
+  }
+  gotToExplore() {
+    window.location.assign("/explore");
+  }
+
   gotToTap() {
-    console.log("tap");
+    window.location.assign("/taps");
   }
 
   render() {
@@ -36,10 +43,18 @@ class Footer extends Nullstack {
                 Marketplace
               </span>
             </div>
-            <div class="cursor-pointer" style="padding-top:6px">
+            <div
+              onclick={this.gotToWtf}
+              class="cursor-pointer"
+              style="padding-top:6px"
+            >
               <span class="glow leading-[28px] text-[20px]">Wtf?</span>
             </div>
-            <div class="cursor-pointer" style="padding-top:6px">
+            <div
+              onclick={this.gotToExplore}
+              class="cursor-pointer"
+              style="padding-top:6px"
+            >
               <span class="glow leading-[28px] text-[20px]">Explore</span>
             </div>
             <div

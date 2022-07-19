@@ -31,6 +31,12 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
+
+  .tapsbackground {
+    background-image: url("taps-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
   .childcyrptowallet {
     background-color: #c0c0c0;
     display: block;
