@@ -7,8 +7,10 @@ import { ThoughtsAndPrayers__factory } from "../../../typechain-types/factories/
 class Account extends Nullstack {
   balance = "";
   async initiate({ wallet }) {
+
+
     //@ts-ignore
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+     const provider = new ethers.providers.Web3Provider(window.ethereum);
 
     // const signer = provider.getSigner(0);
     const tap = ThoughtsAndPrayers__factory.connect(

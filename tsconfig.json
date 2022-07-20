@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "@starving/contracts": ["../contracts"]
-    }
-  }
-}
