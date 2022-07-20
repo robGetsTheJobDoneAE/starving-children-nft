@@ -39,6 +39,7 @@
     "prisma": "^4.0.0"
   },
   "scripts": {
+    "vercel-build":  "npx nullstack build --mode=ssr",
     "start": "npx nullstack start",
     "build": "npx nullstack build --mode=ssr",
     "tailwind": "npx tailwindcss -o ./src/tailwind.css",
