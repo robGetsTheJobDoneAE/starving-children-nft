@@ -1,34 +1,7 @@
 {
-  "folders": [
-    {
-      "name": "ROOT",
-      "path": ".."
-    },
-    {
-      "name": "@starving/app",
-      "path": "../packages/app"
-    },
-    {
-      "name": "@starving/db",
-      "path": "../packages/db"
-    },
-    {
-      "name": "@starving/contracts",
-      "path": "../packages/contracts"
-    },
-    {
-      "name": "@starving/chain-listener",
-      "path": "../packages/chain-listener"
-    }
-  ],
-  "settings": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "[solidity]": {
-      "editor.defaultFormatter": "JuanBlanco.solidity"
-    }
-  }
+    "folders": [
+        {
+            "path": ".."
+        }
+    ]
 }

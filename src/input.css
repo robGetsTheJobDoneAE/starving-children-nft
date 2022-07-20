@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Pragmatica Extended, system-ui, sans-serif;
+  }
+  .ctaglow {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  }
+  .glow {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  }
+  .herobackground1 {
+    background-image: url("red-blur.png"), url("hero-background.png");
+    background-size: 100% 100%, 100% auto;
+    background-repeat: repeat, no-repeat;
+  }
+
+  .herobackground {
+    background-image: url("hero-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .wtfbackground {
+    background-image: url("wtf-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .tapsbackground {
+    background-image: url("taps-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .childcyrptowallet {
+    background-color: #c0c0c0;
+    display: block;
+  }
+  .outlinebutton {
+    color: #ff8896;
+    box-shadow: inset 0px 0px 0px 2px #ff8896;
+  }
+
+  input.iconButton {
+    font-size: 1em;
+    color: transparent; /* Fix for Firefox */
+    border-style: none;
+    border-width: 0;
+    padding: 0 0 0 16px !important; /* Fix for Internet Explorer */
+    text-align: left;
+    width: 16px;
+    height: 16px;
+    line-height: 1 !important;
+    background: transparent url(../images/button.gif) no-repeat scroll 0 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}

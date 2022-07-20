@@ -1,0 +1,6 @@
+Invoking: npx nullstack build --mode=ssr 
+ 🚀️ Building your application in ssr mode...
+WARNING: Missing strong random number source
+
+ ✅️ [dev] Nft is ready for production
+
